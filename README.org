@@ -1,0 +1,2 @@
+* shift-timestamps
+Shift all org timestamps intersecting a given region by the same amount, using the same syntax as `org-clone-subtree-with-time-shift' to indicate the shift.
