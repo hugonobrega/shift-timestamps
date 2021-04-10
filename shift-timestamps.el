@@ -53,8 +53,9 @@ used; otherwise `beg' defaults to the beginning of the buffer. Analogous for
 
 (defun parse-shift (shift)
   "Parses a string indicating a time shift, returning a list (amount unit)
-whose car is the amount to be shifted and whose cadr is the unit of time used
-in the measurement"
+  whose car is the amount to be shifted and whose cadr is the unit of time used
+  in the measurement. This function has been factored out of the 
+  `org-clone-subtree-with-time-shift' function provided by org-mode"
   (let* ((doshift
           (and (org-string-nw-p shift)
                (or (string-match "\\`[ \t]*\\([+-]?[0-9]+\\)\\([hdwmy]\\)[ \t]*\\'"
