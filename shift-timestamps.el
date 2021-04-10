@@ -1,4 +1,4 @@
-;;; shift-timestamps.el --- provides a function for shifting all org-timestamps in a region by the same amount                     -*- lexical-binding: t; -*-
+;;; shift-timestamps.el --- shift all org timestamps in a region by the same amount                     -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2021 Hugo Nobrega
 
