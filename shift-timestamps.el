@@ -25,7 +25,6 @@
 
 ;;; Code:
 
-(require 'core)
 (require 'org)
 
 ;;;###autoload 
@@ -38,12 +37,12 @@ used; otherwise `beg' defaults to the beginning of the buffer. Analogous for
   (save-excursion
     (let ((matches '())
           (beg (or beg
-                   (if (doom-region-active-p)
-                       (doom-region-beginning)
+                   (if (region-active-p)
+                       (region-beginning)
                      (point-min))))
           (end (or end
-                   (if (doom-region-active-p)
-                       (doom-region-end)
+                   (if (region-active-p)
+                       (region-end)
                      (point-max)))))
       (goto-char end)
       (while (search-backward-regexp re beg t)
@@ -89,12 +88,12 @@ interpreted as in `re-all-matches', by the amount indicated in `shift'; if
         (let* ((shift-n (car shift))
                (shift-what (cadr shift))
                (beg (or beg
-                        (if (doom-region-active-p)
-                            (doom-region-beginning)
+                        (if (region-active-p)
+                            (region-beginning)
                           (point-min))))
                (end (or end
-                        (if (doom-region-active-p)
-                            (doom-region-end)
+                        (if (region-active-p)
+                            (region-end)
                           (point-max))))
                (beg (progn (goto-char beg)
                            (while (and (org-at-timestamp-p 'lax) (not (bobp)))
