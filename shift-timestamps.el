@@ -1,4 +1,29 @@
--*- lexical-binding: t; -*-
+;;; shift-timestamps.el --- provides a function for shifting all org-timestamps in a region by the same amount                     -*- lexical-binding: t; -*-
+
+;; Copyright (C) 2021 Hugo Nobrega
+
+;; Author: Hugo Nobrega <hugonobrega@gmail.com>
+;; Keywords: lisp
+;; Version: 0.0.1
+
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+;;; Commentary:
+
+;; provides a function for shifting all org-timestamps in a region by the same amount
+
+;;; Code:
 
 (require 'core)
 (require 'org)
@@ -85,3 +110,4 @@ interpreted as in `re-all-matches', by the amount indicated in `shift'; if
             (org-timestamp-change shift-n shift-what)))))))
 
 (provide 'shift-timestamps)
+;;; shift-timestamps.el ends here
