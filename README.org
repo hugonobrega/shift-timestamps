@@ -1,2 +1,11 @@
 * shift-timestamps
+** Description
 Shift all org timestamps intersecting a given region by the same amount, using the same syntax as `org-clone-subtree-with-time-shift' to indicate the shift.
+
+** Installation (with Doom Emacs)
+Add to ~DOOMDIR/packages.el~:
+#+begin_src elisp
+(package! shift-timestamps
+  :recipe (:host github
+           :repo "hugonobrega/shift-timestamps"))
+#+end_src
