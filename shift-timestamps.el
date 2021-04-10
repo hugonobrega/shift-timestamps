@@ -4,6 +4,7 @@
 
 ;; Author: Hugo Nobrega <hugonobrega@gmail.com>
 ;; Keywords: lisp
+;; Package-Requires: ((emacs "27.1") (org-mode "9.0"))
 ;; Version: 0.0.1
 
 ;; This program is free software; you can redistribute it and/or modify
