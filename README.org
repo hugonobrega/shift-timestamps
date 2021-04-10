@@ -9,3 +9,6 @@ Add to ~DOOMDIR/packages.el~:
   :recipe (:host github
            :repo "hugonobrega/shift-timestamps"))
 #+end_src
+
+** Usage
+Just call the function `shift-all-timestamps`; check its documentation from within Emacs to get further details.
